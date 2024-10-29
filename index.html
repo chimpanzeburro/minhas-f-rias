@@ -3,37 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Frango Delícias do Campo</title>
+    <title>Loja de Frango</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>Loja de Frango</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#receitas">Receitas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <h1>Loja de Frango Delícias do Campo</h1>
-</header>
+    <section id="home">
+        <div class="banner">
+            <h2>O Melhor Frango da Cidade!</h2>
+            <a href="#produtos" class="btn">Faça seu pedido agora!</a>
+        </div>
+    </section>
 
-<main>
-    <h2>Nossos Produtos</h2>
-    <ul>
-        <li>Frango Assado</li>
-        <li>Frango à Milanesa</li>
-        <li>Frango Grelhado</li>
-        <li>Frango Desfiado</li>
-        <li>Sanduíches de Frango</li>
-    </ul>
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Conheça nossa história e compromisso com a qualidade.</p>
+    </section>
 
-    <h2>Horários de Funcionamento</h2>
-    <p>Segunda a Sábado: 10h às 20h</p>
-    <p>Domingo: 10h às 14h</p>
+    <section id="produtos">
+        <h2>Produtos</h2>
+        <div class="produto">
+            <h3>Frango Fresco</h3>
+            <img src="frango-fresco.jpg" alt="Frango Fresco">
+            <p>Descrição do frango fresco.</p>
+            <p>Preço: R$ 20,00</p>
+            <button>Adicionar ao Carrinho</button>
+        </div>
+        <!-- Adicione mais produtos conforme necessário -->
+    </section>
 
-    <h2>Contato</h2>
-    <p>Email: contato@deliciasdocampo.com</p>
-    <p>Telefone: (11) 98765-4321</p>
-</main>
+    <section id="receitas">
+        <h2>Receitas</h2>
+        <p>Dicas e receitas deliciosas com frango.</p>
+    </section>
 
-<footer>
-    <p>&copy; 2024 Loja de Frango Delícias do Campo. Todos os direitos reservados.</p>
-</footer>
+    <section id="contato">
+        <h2>Contato</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 
+    <footer>
+        <p>&copy; 2024 Loja de Frango. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
