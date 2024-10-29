@@ -1,91 +1,86 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Frango Gourmet</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Shop Amigo</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>Frango Gourmet</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre Nós</a></li>
-                <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#receitas">Receitas</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Header -->
+  <header>
+    <h1>Pet Shop Amigo</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Serviços</a></li>
+        <li><a href="#products">Produtos</a></li>
+        <li><a href="#testimonials">Testemunhos</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section id="home" class="banner">
-        <div class="banner-content">
-            <h2>O Melhor Frango da Cidade!</h2>
-            <a href="#produtos" class="btn">Veja Nossos Produtos</a>
-        </div>
-    </section>
+  <!-- Home Section -->
+  <section id="home">
+    <h2>Bem-vindo ao Pet Shop Amigo</h2>
+    <p>O melhor cuidado para o seu melhor amigo!</p>
+    <button>Saiba Mais</button>
+  </section>
 
-    <section id="sobre">
-        <h2>Sobre Nós</h2>
-        <p>Na Frango Gourmet, oferecemos apenas o frango de mais alta qualidade, criado com carinho e atenção. Nossa missão é levar sabor e saúde à sua mesa.</p>
-    </section>
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Nossos Serviços</h2>
+    <div class="service">
+      <h3>Banho & Tosa</h3>
+      <p>Cuidados de qualidade para o seu pet.</p>
+    </div>
+    <div class="service">
+      <h3>Consulta Veterinária</h3>
+      <p>Saúde e bem-estar do seu animal.</p>
+    </div>
+    <div class="service">
+      <h3>Hotel Pet</h3>
+      <p>Hospedagem com conforto e segurança.</p>
+    </div>
+  </section>
 
-    <section id="produtos">
-        <h2>Produtos</h2>
-        <div class="produtos-grid">
-            <div class="produto">
-                <img src="frango-fresco.jpg" alt="Frango Fresco">
-                <h3>Frango Fresco</h3>
-                <p>Descrição do frango fresco.</p>
-                <p>Preço: R$ 20,00</p>
-                <button>Adicionar ao Carrinho</button>
-            </div>
-            <div class="produto">
-                <img src="frango-assado.jpg" alt="Frango Assado">
-                <h3>Frango Assado</h3>
-                <p>Descrição do frango assado.</p>
-                <p>Preço: R$ 35,00</p>
-                <button>Adicionar ao Carrinho</button>
-            </div>
-            <!-- Adicione mais produtos conforme necessário -->
-        </div>
-    </section>
+  <!-- Products Section -->
+  <section id="products">
+    <h2>Produtos</h2>
+    <div class="product">
+      <h3>Ração Premium</h3>
+      <p>Alimentação balanceada para o seu pet.</p>
+    </div>
+    <div class="product">
+      <h3>Brinquedos</h3>
+      <p>Diversão e estímulo para o seu animal.</p>
+    </div>
+  </section>
 
-    <section id="receitas">
-        <h2>Receitas</h2>
-        <p>Explore nossas receitas deliciosas e surpreenda sua família e amigos!</p>
-        <ul>
-            <li>Receita 1: Frango ao Curry</li>
-            <li>Receita 2: Frango Grelhado com Ervas</li>
-            <li>Receita 3: Frango à Parmegiana</li>
-        </ul>
-    </section>
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <h2>O que nossos clientes dizem</h2>
+    <blockquote>"Melhor pet shop da cidade! Atendimento excelente."</blockquote>
+    <blockquote>"Meu cãozinho sempre volta feliz!"</blockquote>
+  </section>
 
-    <section id="contato">
-        <h2>Contato</h2>
-        <form>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Entre em Contato</h2>
+    <form>
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Mensagem:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
 
-    <footer>
-        <p>&copy; 2024 Frango Gourmet. Todos os direitos reservados.</p>
-        <div class="social-media">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-        </div>
-    </footer>
+  <footer>
+    <p>© 2024 Pet Shop Amigo. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
