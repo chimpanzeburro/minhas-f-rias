@@ -15,7 +15,7 @@ body {
 
 /* Banner Principal */
 #banner {
-  background-image: url('banner-pet.jpg'); /* Substitua com uma imagem de pets */
+  background-image: url('cachorro.png'); /* Substitua com uma imagem de pets */
   background-size: cover;
   background-position: center;
   color: #fff;
