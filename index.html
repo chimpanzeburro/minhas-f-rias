@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Frango</title>
+    <title>Loja de Frango Gourmet</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Loja de Frango</h1>
+        <div class="logo">
+            <h1>Frango Gourmet</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -20,33 +23,47 @@
         </nav>
     </header>
 
-    <section id="home">
-        <div class="banner">
+    <section id="home" class="banner">
+        <div class="banner-content">
             <h2>O Melhor Frango da Cidade!</h2>
-            <a href="#produtos" class="btn">Faça seu pedido agora!</a>
+            <a href="#produtos" class="btn">Veja Nossos Produtos</a>
         </div>
     </section>
 
     <section id="sobre">
         <h2>Sobre Nós</h2>
-        <p>Conheça nossa história e compromisso com a qualidade.</p>
+        <p>Na Frango Gourmet, oferecemos apenas o frango de mais alta qualidade, criado com carinho e atenção. Nossa missão é levar sabor e saúde à sua mesa.</p>
     </section>
 
     <section id="produtos">
         <h2>Produtos</h2>
-        <div class="produto">
-            <h3>Frango Fresco</h3>
-            <img src="frango-fresco.jpg" alt="Frango Fresco">
-            <p>Descrição do frango fresco.</p>
-            <p>Preço: R$ 20,00</p>
-            <button>Adicionar ao Carrinho</button>
+        <div class="produtos-grid">
+            <div class="produto">
+                <img src="frango-fresco.jpg" alt="Frango Fresco">
+                <h3>Frango Fresco</h3>
+                <p>Descrição do frango fresco.</p>
+                <p>Preço: R$ 20,00</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="frango-assado.jpg" alt="Frango Assado">
+                <h3>Frango Assado</h3>
+                <p>Descrição do frango assado.</p>
+                <p>Preço: R$ 35,00</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+            <!-- Adicione mais produtos conforme necessário -->
         </div>
-        <!-- Adicione mais produtos conforme necessário -->
     </section>
 
     <section id="receitas">
         <h2>Receitas</h2>
-        <p>Dicas e receitas deliciosas com frango.</p>
+        <p>Explore nossas receitas deliciosas e surpreenda sua família e amigos!</p>
+        <ul>
+            <li>Receita 1: Frango ao Curry</li>
+            <li>Receita 2: Frango Grelhado com Ervas</li>
+            <li>Receita 3: Frango à Parmegiana</li>
+        </ul>
     </section>
 
     <section id="contato">
@@ -54,6 +71,8 @@
         <form>
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
             <label for="mensagem">Mensagem:</label>
             <textarea id="mensagem" name="mensagem" required></textarea>
             <button type="submit">Enviar</button>
@@ -61,7 +80,12 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 Loja de Frango. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Frango Gourmet. Todos os direitos reservados.</p>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
     </footer>
 </body>
 </html>
