@@ -13,7 +13,8 @@ header {
 }
 
 .logo img {
-    max-width: 100%;
+    max-width: 100px; /* limite de tamanho para a logo */
+    height: auto;
 }
 
 main {
@@ -30,7 +31,14 @@ section {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     max-width: 600px;
-    width: 50%;
+    width: 100%; /* adapta a seção ao tamanho máximo definido */
+}
+
+.demonstração img {
+    width: 100%; /* a imagem ocupa a largura da seção */
+    max-width: 300px; /* limite máximo de largura */
+    height: auto;
+    border-radius: 8px; /* arredondamento dos cantos */
 }
 
 footer {
